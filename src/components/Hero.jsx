@@ -43,7 +43,7 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub size={19} />
+            <FaGithub size={19}/>
           </a>
 
           <a
