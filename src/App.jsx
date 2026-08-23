@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import SystemInfo from "./components/SystemInfo";
 
@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="desktop">
-      <Navbar />
+      <NavBar />
 
       <main>
         <Hero />
