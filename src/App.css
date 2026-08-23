@@ -353,26 +353,92 @@ nav a:hover {
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 28px;
 
   margin-top: 20px;
+  padding-left: 28px;
+  /* room for the tree */
+  position: relative;
+  /* anchor for the trunk line */
+}
 
-  background: var(--border);
-  border: 1px solid var(--border);
+.experience-list::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom,
+      var(--mint) 0%,
+      rgba(46, 211, 183, 0.15) 100%);
 }
 
 .experience-item {
+  position: relative;
   padding: 28px;
-
   background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
 
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease;
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 32px;
+  width: 16px;
+  height: 2px;
+  background: var(--mint);
+}
+
+.experience-item::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 26px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--mint);
 }
 
 .experience-item:hover {
   background: rgba(21, 48, 42, 0.65);
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 12px;
+  padding-top: 4px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--mint);
+  box-shadow: 0 0 0 4px rgba(46, 211, 183, 0.12);
+  flex-shrink: 0;
+}
+
+.timeline-line {
+  flex: 1;
+  width: 2px;
+  margin-top: 4px;
+  background: linear-gradient(to bottom, var(--mint) 0%, transparent 100%);
+  opacity: 0.35;
+}
+
+.experience-content {
+  flex: 1;
+  min-width: 0;
+  /* prevents flex overflow on long tech-list rows */
 }
 
 /* Header */
@@ -482,6 +548,25 @@ nav a:hover {
   .experience-panel {
     padding: 25px 22px;
     margin-bottom: 60px;
+  }
+
+  @media (max-width: 800px) {
+    .experience-list {
+      padding-left: 20px;
+    }
+
+    .experience-list::before {
+      left: 4px;
+    }
+
+    .experience-item::before {
+      left: -16px;
+      width: 12px;
+    }
+
+    .experience-item::after {
+      left: -19px;
+    }
   }
 
   .experience-item {
