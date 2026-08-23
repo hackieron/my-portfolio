@@ -1,6 +1,6 @@
 import { FaTerminal } from "react-icons/fa";
 
-function Navbar() {
+function NavBar() {
   return (
     <header className="topbar">
       <div className="brand">
@@ -24,4 +24,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
