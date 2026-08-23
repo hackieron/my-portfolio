@@ -8,7 +8,7 @@ import TerminalWindow from "./TerminalWindow";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="about">
       <TerminalWindow />
 
       <div className="hero-content">
@@ -38,7 +38,7 @@ function Hero() {
 
         <div className="socials">
           <a
-            href="#"
+            href="https://github.com/hackieron"
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +47,7 @@ function Hero() {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/krnalbania/"
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,7 +56,7 @@ function Hero() {
           </a>
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:albaniakier@email.com"
             aria-label="Email"
           >
             <FaEnvelope size={19} />
