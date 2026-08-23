@@ -1,7 +1,12 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
-
+import {
+    FaGithub,
+    FaLinkedin,
+    FaEnvelope,
+    FaPhone,
+} from "react-icons/fa";
 function Contact() {
     const form = useRef();
 
@@ -72,21 +77,20 @@ function Contact() {
                         <h2>Let's build something together.</h2>
 
                         <p>
-                            I'm currently open to opportunities, freelance projects, and
-                            interesting collaborations.
+                            I'm currently seeking full-time opportunities as a Full Stack Developer and would love to contribute to meaningful projects with a great team.
                         </p>
 
                         <div className="contact-details">
                             <a href="mailto:albaniakier@email.com">
-                                <span className="detail-icon">@</span>
+                                <span className="detail-icon"><FaEnvelope size={12} /></span>
                                 albaniakier@email.com
                             </a>
                             <a href="tel:+639XXXXXXXXX">
-                                <span className="detail-icon">☎</span>
+                                <span className="detail-icon"><FaPhone size={12} /></span>
                                 +63 926 271 1181
                             </a>
                             <a href="https://github.com/hackieron" target="_blank" rel="noreferrer">
-                                <span className="detail-icon">GH</span>
+                                <span className="detail-icon"><FaGithub size={12} /></span>
                                 github.com/hackieron
                             </a>
 
@@ -95,7 +99,7 @@ function Contact() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="detail-icon">in</span>
+                                <span className="detail-icon"><FaLinkedin size={12} /></span>
                                 linkedin.com/in/krnalbania
                             </a>
                         </div>
@@ -163,10 +167,7 @@ function Contact() {
                     </form>
                 </div>
 
-                <div className="contact-status">
-                    <span className="mint">●</span>
-                    STATUS: AVAILABLE FOR OPPORTUNITIES
-                </div>
+
             </section>
         </>
     );

@@ -3,7 +3,7 @@ function Experience() {
     <section className="experience-panel" id="experience">
       <div className="panel-title">
         <span className="mint">●</span>
-        EXPERIENCE
+        WORK EXPERIENCE
       </div>
 
       <div className="experience-list">
