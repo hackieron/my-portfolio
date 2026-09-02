@@ -83,7 +83,7 @@ function Projects() {
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        VIEW CODE
+                                        VIEW
                                         <span>↗</span>
                                     </a>
                                 )}
