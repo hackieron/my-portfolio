@@ -21,13 +21,23 @@ function Projects() {
             demo: null,
         },
         {
-            number: "04",
+            number: "03",
             title: "Student Grading System",
             description:
                 "A grading management system for handling students, subjects, grades, and access-controlled academic records. Includes a teacher's leave and approval module.",
             tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
             status: "COMPLETED",
             github: "https://github.com/hackieron/student_portal",
+            demo: null,
+        },
+        {
+            number: "04",
+            title: "Courseer",
+            description:
+                "A Mobile College Program Recommendation App for Graduating Senior High School Students. This uses TF-IDF(Term Frequency–Inverse Document Frequency) logic. Using a wordbank API paired with an archive of Existing College Programs.",
+            tech: ["Kotlin", "XML", "SQLite", "Firebase"],
+            status: "COMPLETED",
+            github: "https://github.com/hackieron/CourSeerNew",
             demo: null,
         },
     ];
