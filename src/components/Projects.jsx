@@ -2,42 +2,32 @@ function Projects() {
     const projects = [
         {
             number: "01",
-            title: "Personal Stuff Tracker",
+            title: "Personal Stuff Tracker(WIP)",
             description:
                 "A household management application for tracking personal belongings, chores, expenses, groceries, and household events in one centralized dashboard.",
-            tech: ["Laravel", "React", "MySQL", "REST API"],
+            tech: ["Laravel", "React Native", "MySQL", "REST API"],
             status: "IN DEVELOPMENT",
-            github: "https://github.com/hackieron",
+            github: "https://github.com/hackieron/inventory-app",
             demo: null,
         },
         {
             number: "02",
-            title: "Employee Management System",
+            title: "DenDB - Dental Appointment Website",
             description:
-                "A web-based employee management system with CRUD operations, data tables, form validation, and asynchronous interactions.",
-            tech: ["Laravel", "Blade", "Bootstrap", "MySQL", "AJAX"],
+                "An online dental appointment website with automatic service pricing and availability feature.",
+            tech: ["WordPress", "PHP", "HTML + CSS"],
             status: "COMPLETED",
-            github: "https://github.com/hackieron",
-            demo: null,
-        },
-        {
-            number: "03",
-            title: "Leave Management System",
-            description:
-                "An employee leave management application featuring leave requests, approval workflows, role-based access, and administrative controls.",
-            tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-            status: "COMPLETED",
-            github: "https://github.com/hackieron",
+            github: "https://dev-dendb.pantheonsite.io/",
             demo: null,
         },
         {
             number: "04",
             title: "Student Grading System",
             description:
-                "A grading management system for handling students, subjects, grades, and access-controlled academic records.",
+                "A grading management system for handling students, subjects, grades, and access-controlled academic records. Includes a teacher's leave and approval module.",
             tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
             status: "COMPLETED",
-            github: "https://github.com/hackieron",
+            github: "https://github.com/hackieron/student_portal",
             demo: null,
         },
     ];
