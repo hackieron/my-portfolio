@@ -9,6 +9,7 @@ const SKILL_GROUPS = [
         items: [
             { name: "React", icon: "react" },
             { name: "TypeScript", icon: "typescript" },
+            { name: "JavaScript", icon: "javascript" },
         ],
     },
     {

@@ -95,6 +95,7 @@ function Experience() {
 
           <div className="tech-list">
             <span>PHP Codeigniter</span>
+            <span>Codeception</span>
             <span>Postman/Insomnia</span>
             <span>MySQL</span>
             <span>REST API</span>
